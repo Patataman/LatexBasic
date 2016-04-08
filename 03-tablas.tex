@@ -1,0 +1,53 @@
+\documentclass[10pt,a4paper,titlepage]{article} %Formato del documento
+\usepackage[utf8]{inputenc} %Especificamos que queremos usar utf-8 (ñ o tildes)
+%Si no importamos este paquete, las ñ no aparecerían por ejemplo
+\usepackage[spanish]{babel}
+\usepackage{geometry} %Márgenes del documento
+\geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
+
+%Definimos el título del documento
+\title{ \textbf{ \Huge{Latex $>$ Word}} \\ Jornadas Técnicas XVIII}
+\author{
+		\begin{tabular}{l}
+			\multicolumn{1}{l}{GUL} \\ \hline \\
+			Daniel Alejandro Rodríguez López \\
+		\end{tabular}
+}
+%
+\begin{document}
+
+\maketitle
+\newpage
+
+%Para que el índice se incluya correctamente debemos compilarlo dos veces. En la 1º se genera y en la 2º se incluye en el documento.
+\tableofcontents
+\newpage
+
+	\section{Tabla aqui Tabla allá}
+	Con esto creamos una tabla de 3 columnas que tienen el texto centrado. Los estilos más comunes son \textbf{l} (letra l, no número 1) (justificado a la izquierda), \textbf{c} (centrado) y \textbf{r} (justificado a la derecha). 
+
+	\begin{center}
+	\begin{tabular}{l c r}
+	Izquierda & Centro & Derecha \\ \hline
+	Patatas & Mesa & silla \\
+	Cosa1 & Cosa2 & Cosa3 \\ \hline
+	\end{tabular}
+	\end{center}
+
+
+	Se puede jugar mucho con las tablas, como por ejemplo, combinar celdas o tablas dentro de tablas (algo complicado de hacer la 1º vez, pero luego es copiar y pegar xD)
+
+	\begin{center}
+	\begin{tabular}{l c r}
+	\multicolumn{3}{c}{He juntado las 3 columnas} \\ \hline
+	Izquierda & Centro & Derecha \\ \hline
+	Patatas & Mesa & silla \\
+	Cosa1 & Cosa2 & Cosa3 \\ \hline
+	\end{tabular}
+	\end{center}
+
+
+	Las columnas se separan mediante \textbf{\&}. El salto de línea se realiza mediante \textbf{$\backslash$$\backslash$} y la linea negra en el salto de línea se realiza con el comando \textbf{\texttt{hline}}.
+
+
+\end{document}

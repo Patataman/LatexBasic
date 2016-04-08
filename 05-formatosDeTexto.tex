@@ -1,0 +1,46 @@
+\documentclass[10pt,a4paper,titlepage]{article} %Formato del documento
+\usepackage[utf8]{inputenc} %Especificamos que queremos usar utf-8 (ñ o tildes)
+%Si no importamos este paquete, las ñ no aparecerían por ejemplo
+\usepackage[spanish]{babel}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage[official]{eurosym}
+%\usepackage{enumitem}
+%\usepackage{graphicx}
+%\usepackage[table]{xcolor}
+%\usepackage{geometry}
+%\geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
+%\setlength{\parskip}{0.5em}
+\usepackage{hyperref} % Permite que los títulos del índice sean enlaces directos a los apartados. Además permite añadir enlaces a internet, referencias...
+
+%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%No es realmente necesaria, pero hace que sean más bonitos los enlaces
+%%%%%%%%%%%%%%%%
+%
+%Definimos el título del documento
+\title{ \textbf{ \Huge{Latex $>$ Word}} \\ Jornadas Técnicas XVIII}
+\author{
+		\begin{tabular}{l}
+			\multicolumn{1}{l}{GUL} \\ \hline \\
+			Daniel Alejandro Rodríguez López \\
+		\end{tabular}
+}
+%
+\begin{document}
+
+\maketitle
+\newpage
+
+%Para que el índice se incluya correctamente debemos compilarlo dos veces. En la 1º se genera y en la 2º se incluye en el documento.
+\tableofcontents
+\newpage
+
+\end{document}

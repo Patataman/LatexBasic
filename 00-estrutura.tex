@@ -1,0 +1,26 @@
+\documentclass[10pt,a4paper,titlepage]{article} %Formato del documento
+\usepackage[utf8]{inputenc} %Especificamos que queremos usar utf-8 (ñ o tildes)
+%Si no importamos este paquete, las ñ no aparecerían por ejemplo
+\usepackage[spanish]{babel}
+\usepackage{geometry} %Márgenes del documento
+\geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
+
+\begin{document}
+
+	Aquí va texto, y otras cosicas. Es tan sencillo como esto. Voy a poner algo con ñ para que se pueda comprobar. Ale, puesto algo con ñ.
+
+	Por defecto Latex tiene el texto justificado. En general esto nos vendrá bien ya que es más formal el texto justificado. Pero si queremos centrar algún elemento, que también es muy común, se realiza mediante la siguiente estructura:
+	\begin{center}
+	\begin{tabular}{l}
+		\texttt{$\backslash$ begin\{center\}} \\
+			\hspace{1cm}\texttt{Todo lo que vaya aquí estará centrado} \\
+		\texttt{$\backslash$ end\{center\}} \\
+	\end{tabular}
+	\end{center}
+
+	Los saltos de linea (no cambio de párrafo) se realizazn mediante 2 $\backslash$
+	% \backslash aparece entre $ porque se trata de un símbolo matemático
+
+	El cambio de párrafo con los <enter> en el .tex
+
+\end{document}

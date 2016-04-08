@@ -1,0 +1,35 @@
+\documentclass[10pt,a4paper,titlepage]{article} %Formato del documento
+\usepackage[utf8]{inputenc} %Especificamos que queremos usar utf-8 (ñ o tildes)
+%Si no importamos este paquete, las ñ no aparecerían por ejemplo
+\usepackage[spanish]{babel}
+\usepackage{geometry} %Márgenes del documento
+\geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
+
+%Definimos el título del documento
+\title{ \textbf{ \Huge{Latex $>$ Word}} \\ Jornadas Técnicas XVIII}
+\author{
+		\begin{tabular}{l}
+			\multicolumn{1}{l}{GUL} \\ \hline \\
+			Daniel Alejandro Rodríguez López \\
+		\end{tabular}
+}
+%
+\begin{document}
+
+\maketitle
+\newpage
+
+%Para que el índice se incluya correctamente debemos compilarlo dos veces. En la 1º se genera y en la 2º se incluye en el documento.
+\tableofcontents
+\newpage
+
+	\section{Titulo 1}
+	Aqui va texto, y otras cosicas. Estan sencillo como esto. Voy a poner algo con ñ para que se pueda comprobar. Ale, puesto algo con ñ.
+
+	\subsection{Subtitulo 1.1}
+		Se pueden hacer varios subsections, hasta 3 subcategorías (1.1.1) con los comandos básicos de Latex. Si creamos nuestro propio comando podemos llegar a muchos más subniveles. 
+		\subsubsection{ola k ase}
+			xDDD
+			%\subsubsubsection{ola k ase 2}  Esto ya no funcionaría
+			%	sadsa
+\end{document}
