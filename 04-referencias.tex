@@ -6,7 +6,7 @@
 \geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
 
 \usepackage{hyperref} % Permite que los títulos del índice sean enlaces directos a los apartados. Además permite añadir enlaces a internet, referencias...
-
+\usepackage{nameref} % referenciar nombre de titulos
 %%%%%%%%%%%%%%
 \hypersetup{
     colorlinks,
@@ -20,7 +20,7 @@
 
 
 %Definimos el título del documento
-\title{ \textbf{ \Huge{Latex $>$ Word}} \\ Jornadas Técnicas XVIII}
+\title{ \textbf{ \Huge{Latex $>$ Word}} \\ Jornadas Técnicas XXVIII}
 \author{
 		\begin{tabular}{l}
 			\multicolumn{1}{l}{GUL} \\ \hline \\
@@ -37,11 +37,8 @@
 \tableofcontents
 \newpage
 
-	\section*{Enlace de interés}
-		Para saber más sobre las etiquetas y referencias: https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
-
 	\section{Tabla aqui Tabla allá}
-	\label{sec:enl}
+	\label{intro}
 	Con esto creamos una tabla de 3 columnas que tienen el texto centrado. Los estilos más comunes son \textbf{l} (letra l, no número 1) (justificado a la izquierda), \textbf{c} (centrado) y \textbf{r} (justificado a la derecha). 
 
 		\subsection{Tabla 1}
@@ -72,6 +69,6 @@
 	\newpage
 	\section{Otro título para poder usar referencias}
 	Cosicas asdhsaidhiada patata asdadsad bambisito xDDDDDDDDDDD report \\
-	Como se puede observar, si clicamos al siguiente texto~\ref{sec:enl} vamos a la primera sección del documento.
+	Como se puede observar, si clicamos al siguiente texto \textbf{\nameref{intro}} vamos a la primera sección del documento.
 
 \end{document}

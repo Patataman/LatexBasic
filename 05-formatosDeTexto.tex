@@ -2,18 +2,8 @@
 \usepackage[utf8]{inputenc} %Especificamos que queremos usar utf-8 (ñ o tildes)
 %Si no importamos este paquete, las ñ no aparecerían por ejemplo
 \usepackage[spanish]{babel}
-%\usepackage{amsmath}
-%\usepackage{amsfonts}
-%\usepackage{amssymb}
-%\usepackage[official]{eurosym}
-%\usepackage{enumitem}
-%\usepackage{graphicx}
-%\usepackage[table]{xcolor}
-%\usepackage{geometry}
-%\geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
-%\setlength{\parskip}{0.5em}
 \usepackage{hyperref} % Permite que los títulos del índice sean enlaces directos a los apartados. Además permite añadir enlaces a internet, referencias...
-
+\usepackage{color} %Para cambiar el color de las letras
 %%%%%%%%%%%%%%
 \hypersetup{
     colorlinks,
@@ -37,10 +27,17 @@
 \begin{document}
 
 \maketitle
+
 \newpage
 
-%Para que el índice se incluya correctamente debemos compilarlo dos veces. En la 1º se genera y en la 2º se incluye en el documento.
-\tableofcontents
-\newpage
+\section*{Poner bonito el documento}
+	Aunque a estas alturas ya se ha usado en otros ejemplos, vamos a realizar una breve descripción de los formatos de texto más utilizados:
+	\begin{enumerate}
+		\item \textbf{Negrita:} La letras en negrita se generan mediante \textbf{$\backslash$textbf\{$<$Texto que queremos en negrita$>$\}} = \textbf{Ola k ase}.
+		\item \textbf{Cursiva:} La letras en cursiva se generan mediante \textbf{$\backslash$textit\{$<$Texto que queremos en cursiva$>$\}} = \textit{Ola k ase}.
+		\item \textbf{Subrayado:} La letras subrayadas se generan mediante \textbf{$\backslash$underline\{$<$Texto que queremos subrayado$>$\}} = \underline{Ola k ase}.
+		\item \textbf{Estilo código:} La letras estilo código se generan mediante \textbf{$\backslash$texttt\{$<$Texto que queremos en código$>$\}} = \texttt{printf(`Ola k ase');}.
+		\item \textbf{Cambiar color:} Necesitaremos importar el paquete \textbf{color} y se usa mediante \textbf{$\backslash$color\{$<$Color que queremos$>$\}\{$<$Texto que queremos coloreado$>$\}} = \color{blue}{Color azul}.
+	\end{enumerate}
 
 \end{document}
