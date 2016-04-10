@@ -41,6 +41,31 @@
 \newpage
 
 \section*{Listas \sout{de la compra}}
-	Usar listas es bastante sencillo
+	Usar listas es bastante sencillo. Tenemos dos tipos principales de listas: Numeradas (enumerate) y No Numeradas (itemize).
 
+	\subsection*{Tipo 1}
+		\begin{enumerate}
+			\item Elemento 1
+			\item Elemento 2
+		\end{enumerate}
+
+	\subsection*{Tipo 2}
+		\begin{itemize}
+			\item Elemento 1
+			\item Elemento 2
+		\end{itemize}
+
+	Las listas se crean mediante el comando $\backslash$begin{enumerate ó itemize} <cosas de tu lista> $\backslash$end{enumerate ó itemize}.
+
+	Los elementos de la lista se agregan mediante el comando $\backslash$item.
+
+\section*{Lista de listas}
+	Tambien es posible crear subniveles dentro de las listas. Donde queramos que aparezca el nuevo subnivel escribimos $\backslash$item seguido de la lista que queremos crear.
+	\begin{enumerate}
+		\item \begin{enumerate}
+			\item Elemento 1.1
+			\item Elemento 1.2
+		\end{enumerate}
+		\item Elemento 2
+	\end{enumerate}
 \end{document}

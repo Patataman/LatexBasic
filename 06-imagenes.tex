@@ -7,7 +7,8 @@
 %\usepackage{amssymb}
 %\usepackage[official]{eurosym}
 %\usepackage{enumitem}
-%\usepackage{graphicx}
+\usepackage{graphicx}
+\usepackage{float}
 %\usepackage[table]{xcolor}
 %\usepackage{geometry}
 %\geometry{top=2.54cm, left=3.1cm, right=3.1cm, bottom=2.54cm}
@@ -39,5 +40,28 @@
 \newpage
 
 \section*{Algunas imágenes por aqui, algunas imágenes por allá}
+	Para poder incluir imágenes en el documento debemos importar el paquete \textbf{graphicx}. Una vez lo hemos incluido, mediante el comando $\backslash$includegraphics ya podemos incluir imágenes en el documento.
+
+	\begin{center}
+		\includegraphics[scale=0.5]{images/imagen1}
+	\end{center}
+
+	Una mejor forma de usar las imágenes es mediante la estructura \textbf{$\backslash$begin\{figure\} $<$cosas$>$ $\backslash$end\{figure\}}. Mediante este comando podemos usar una serie de parámetros que son los siguientes
+	\begin{itemize}
+		\item \textbf{h:} Coloca la imagen aproximádamente en el mismo sitio donde se coloca en el .tex.
+		\item \textbf{t:} Coloca la imagen en la parte superior de la hoja.
+		\item \textbf{p:} Coloca la imagen en una hoja aparte.
+		\item \textbf{b:} Coloca la imagen en la parte inferior de la hoja.
+		\item \textbf{!:} Sobreescribe valores por defecto, recomendable su uso.
+		\item \textbf{H:} Coloca la imagen en el mismísimo sitio que en el .tex. Requiere el paquete float. \textbf{No es compatible con !}.
+	\end{itemize}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.3]{images/imagen2}
+		\caption{Imagen muy seria}
+	\end{figure}
+
+	No hace falta escribir la extensión de la imagen.
 
 \end{document}

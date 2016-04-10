@@ -27,27 +27,36 @@
 	Con esto creamos una tabla de 3 columnas que tienen el texto centrado. Los estilos más comunes son \textbf{l} (letra l, no número 1) (justificado a la izquierda), \textbf{c} (centrado) y \textbf{r} (justificado a la derecha). 
 
 	\begin{center}
-	\begin{tabular}{l c r}
-	Izquierda & Centro & Derecha \\ \hline
-	Patatas & Mesa & silla \\
-	Cosa1 & Cosa2 & Cosa3 \\ \hline
-	\end{tabular}
+		\begin{tabular}{l c r}
+		Izquierda & Centro & Derecha \\ \hline
+		Patatas & Mesa & silla \\
+		Cosa1 & Cosa2 & Cosa3 \\ \hline
+		\end{tabular}
 	\end{center}
 
 
 	Se puede jugar mucho con las tablas, como por ejemplo, combinar celdas o tablas dentro de tablas (algo complicado de hacer la 1º vez, pero luego es copiar y pegar xD)
 
 	\begin{center}
-	\begin{tabular}{l c r}
-	\multicolumn{3}{c}{He juntado las 3 columnas} \\ \hline
-	Izquierda & Centro & Derecha \\ \hline
-	Patatas & Mesa & silla \\
-	Cosa1 & Cosa2 & Cosa3 \\ \hline
-	\end{tabular}
+		\begin{tabular}{l c r}
+		\multicolumn{3}{c}{He juntado las 3 columnas} \\ \hline
+		Izquierda & Centro & Derecha \\ \hline
+		Patatas & Mesa & silla \\
+		Cosa1 & Cosa2 & Cosa3 \\ \hline
+		\end{tabular}
 	\end{center}
 
 
-	Las columnas se separan mediante \textbf{\&}. El salto de línea se realiza mediante \textbf{$\backslash$$\backslash$} y la linea negra en el salto de línea se realiza con el comando \textbf{\texttt{hline}}.
+	Las columnas se separan mediante \textbf{\&}. El salto de línea se realiza mediante \textbf{$\backslash$$\backslash$} y la linea negra en el salto de línea se realiza con el comando \textbf{\texttt{hline}}. Si en la definición de las columnas añadimos $|$ entre las columnas, obtendremos una línea negra que las separa en la tabla final.
+
+	\begin{center}
+		\begin{tabular}{l | c || r}
+		\multicolumn{3}{c}{He juntado las 3 columnas} \\ \hline
+		Izquierda & Centro & Derecha \\ \hline
+		Patatas & Mesa & silla \\
+		Cosa1 & Cosa2 & Cosa3 \\ \hline
+		\end{tabular}
+	\end{center}
 
 
 \end{document}
