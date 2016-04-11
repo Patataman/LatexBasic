@@ -1,0 +1,54 @@
+\documentclass{beamer} %documento beamer -> Presentaciones
+\usepackage[spanish]{babel} %para indicar que es español
+\usepackage[utf8]{inputenc} %para usar la codificación UTF-8 (tíldes por ejemplo)
+\usepackage{hyperref} %hipernelaces
+\usepackage{animate}
+\usepackage{graphicx}
+
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\usetheme{Goettingen} %Tematica de colores y estilo
+%\usecolortheme{beaver}  %Tematica de colores y estilo
+\useinnertheme{rectangles}
+
+
+\title[Pretend that you're Hercule Poirot] % (optional, only for long titles)
+{Pretend that you're Hercule Poirot}
+\subtitle{U otra forma de porqué LaTeX mola más que Word}
+\author[Daniel A. Rodríguez López] % (optional, for multiple authors)
+  {Daniel A. Rodríguez López}
+\date[XX-04-2016] % (optional)
+  {Jornadas Técnicas XXVIII}
+\subject{Jornadas Técnicas XXVIII}
+
+\begin{document}
+
+  \frame{\titlepage}
+
+  \begin{frame}
+    \section{¿Qué es LaTeX?}
+    Primero de todo, \textbf{no es un procesador de texto}, olvidaos de Word, LibreOffice y lo que sea que se use en Mac.\\
+
+    LaTeX es un sistema de preparación de textos, olvidándonos inicialmente de la parte visual del documento y centrándonos en el texto.
+    \begin{figure}
+      \includegraphics[scale=0.1]{images/imagen3}
+    \end{figure}
+  \end{frame}
+
+  \frame{
+    Enlaces de interés:
+    \begin{itemize}
+      \item \href{https://www.latex-project.org/}{latex-project.org/}
+      \item \href{https://en.wikibooks.org/wiki/LaTeX/}{en.wikibooks.org/wiki/LaTeX/}
+      \item \href{http://detexify.kirelabs.org/classify.html}{detexify.kirelabs.org/classify.html}
+      \item Google es vuestro amigo
+    \end{itemize}
+  }
+
+\end{document}
