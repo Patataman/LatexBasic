@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,titlepage]{article} %Formato del documento
+\usepackage[utf8]{inputenc} %Especificamos que queremos usar utf-8 (ñ o tildes)
+%Si no importamos este paquete, las ñ no aparecerían por ejemplo
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{hyperref} % Permite que los títulos del índice sean enlaces directos a los apartados. Además permite añadir enlaces a internet, referencias...
+\usepackage{float}
+%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%No es realmente necesaria, pero hace que sean más bonitos los enlaces
+%%%%%%%%%%%%%%%%
+%
+%Definimos el título del documento
+\title{ \textbf{ \Huge{Latex $>$ Word}} \\ Jornadas Técnicas XXVIII}
+\author{
+		\begin{tabular}{l}
+			\multicolumn{1}{l}{GUL} \\ \hline \\
+			Daniel Alejandro Rodríguez López \\
+		\end{tabular}
+}
+%
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section*{Gráficas}
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+			 	title={Grafica bonica},
+				ybar,
+				symbolic x coords={Columna1, Columna2},
+				xtick=data,
+				ylabel={Cosas del Y},
+				%bar width=10, anchura de las barras, por defecto 10.
+				ymax=50, %valor máximo del eje Y
+				enlargelimits=0.07,
+				legend style={at={(0.5,-0.15)}, anchor=north,legend columns=-1},
+				ymajorgrids = true,
+				enlarge x limits={abs=1cm}, %margen a los extremos de la gráfica
+				%x tick label style={rotate=40, anchor=east, align=right,text width=1.5cm}, %estilo de las etiquetas del eje X
+				nodes near coords,
+				%width = 17cm, anchura de la grafica
+				%height = 8cm altura de la gráfica
+			]
+			%cada addplot son conjuntos de columnas
+			\addplot coordinates { (Columna1,10) (Columna2,5) };
+			\addplot coordinates { (Columna1,23) (Columna2,18) };
+			\addplot coordinates { (Columna1,15) (Columna2,20) };
+
+			\legend{Categoria 1, Categoria 2, Categoria 3}
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Nombre para la gráfica}
+		\end{figure}
+\end{document}
